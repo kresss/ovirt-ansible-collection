@@ -37,6 +37,7 @@ Ansible role for deploying oVirt Hosted-Engine
 | he_host_address | $(hostname -f) | address used by the engine for the first host |
 | he_bridge_if | null | interface used for the management bridge |
 | he_apply_openscap_profile | false | apply a default OpenSCAP security profile on HE VM |
+| he_apply_repositories_role | false | apply the repositories role to the HE VM |
 | he_network_test | dns | the way of the network connectivity check performed by ovirt-hosted-engine-ha and ovirt-hosted-engine-setup, available options: *dns*, *ping*, *tcp* or *none*.  |
 | he_tcp_t_address | null | hostname to connect if he_network_test is *tcp*  |
 | he_tcp_t_port | null | port to connect if he_network_test is *tcp* |
