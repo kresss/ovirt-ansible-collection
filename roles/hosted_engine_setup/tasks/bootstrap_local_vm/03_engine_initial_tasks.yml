@@ -55,8 +55,8 @@
     when: he_dwh_db_password is defined
   - name: Setup Repositories on Local VM
     import_role:
-      name: ovirt.ovirt.repositories
-    when: he_apply_repositories_role|bool
+      name: @NAMESPACE@.@NAME@.repositories
+    when: he_apply_repositories_role
   - name: Import OpenSCAP task
     import_tasks: apply_openscap_profile.yml
     when: he_apply_openscap_profile|bool
